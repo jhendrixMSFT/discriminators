@@ -45,8 +45,8 @@ type SmartSalmon struct {
 	IQ int
 }
 
-// GetFish returns some type of fish.
-func GetFish() FishType {
+// CatchAFish is an example API that returns some type of fish.
+func CatchAFish() FishType {
 	return &Tuna{
 		Color: "white",
 		Fish: Fish{
@@ -56,8 +56,8 @@ func GetFish() FishType {
 	}
 }
 
-// GetSalmon returns some type of salmon.
-func GetSalmon() SalmonType {
+// CatchASalmon is an example API that returns some type of salmon.
+func CatchASalmon() SalmonType {
 	return &SmartSalmon{
 		Salmon: Salmon{
 			Breed: "king",

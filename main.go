@@ -15,7 +15,7 @@ func main() {
 }
 
 func fishExample() {
-	fish := farm.GetFish()
+	fish := farm.CatchAFish()
 	fmt.Printf("fish ID: %d\n", fish.GetFish().ID)
 	switch x := fish.(type) {
 	case *farm.Salmon:
@@ -28,7 +28,7 @@ func fishExample() {
 }
 
 func salmonExample() {
-	fish := farm.GetSalmon()
+	fish := farm.CatchASalmon()
 	fmt.Printf("salmon ID: %d\n", fish.GetFish().ID)
 	switch x := fish.(type) {
 	case *farm.Salmon:
